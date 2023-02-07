@@ -165,7 +165,7 @@ export default function Home() {
             <span className="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-pink-500">
               <span className="relative text-white">annoyed</span>
             </span>
-            all the time, people think that you're busy.
+            all the time, people think that you are busy.
           </blockquote>
         </div>
 

@@ -50,7 +50,7 @@ export default function Home() {
       <main>
         {/* Blobs */}
         <div className="absolute top-10 -left-4 h-96 w-96  animate-globalBlob rounded-full bg-purple-300 opacity-40 mix-blend-multiply blur-2xl filter"></div>
-        <div className="animation-delay-2000 absolute top-0 -right-4 h-96 w-96 animate-globalBlob rounded-full bg-yellow-300 opacity-40 mix-blend-multiply blur-2xl filter"></div>
+        <div className="animation-delay-2000 fixed top-0 -right-4 h-96 w-96 animate-globalBlob rounded-full bg-yellow-300 opacity-40 mix-blend-multiply blur-2xl filter"></div>
         <div className="animation-delay-4000 absolute left-20 -bottom-8 h-96 w-96 animate-globalBlob rounded-full bg-pink-300 opacity-40 mix-blend-multiply blur-2xl filter"></div>
         {/* End of Blobs */}
 

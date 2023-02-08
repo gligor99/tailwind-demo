@@ -4,6 +4,8 @@ import {
   MagnifyingGlassIcon,
 } from '@heroicons/react/24/outline'
 import { AnimatedDesc } from '@/components/common/animated-desc'
+import { SnapComponent } from '@/components/common/snap'
+import Link from 'next/link'
 interface PersonProps {
   name: string
   email: string
@@ -49,11 +51,10 @@ export default function Home() {
       </Head>
       <main>
         {/* Blobs */}
-        <div className="absolute top-10 -left-4 h-96 w-96  animate-globalBlob rounded-full bg-purple-300 opacity-40 mix-blend-multiply blur-2xl filter"></div>
+        {/* <div className="absolute top-10 -left-4 h-96 w-96  animate-globalBlob rounded-full bg-purple-300 opacity-40 mix-blend-multiply blur-2xl filter"></div>
         <div className="animation-delay-2000 fixed top-0 -right-4 h-96 w-96 animate-globalBlob rounded-full bg-yellow-300 opacity-40 mix-blend-multiply blur-2xl filter"></div>
-        <div className="animation-delay-4000 absolute left-20 -bottom-8 h-96 w-96 animate-globalBlob rounded-full bg-pink-300 opacity-40 mix-blend-multiply blur-2xl filter"></div>
+        <div className="animation-delay-4000 absolute left-20 -bottom-8 h-96 w-96 animate-globalBlob rounded-full bg-pink-300 opacity-40 mix-blend-multiply blur-2xl filter"></div> */}
         {/* End of Blobs */}
-
         <div className="mx-auto mt-10 flex max-w-sm items-center space-x-4 rounded-xl bg-white p-6 shadow-lg">
           <div className="shrink-0">
             <div className="h-12 w-12 bg-sky-400"></div>
@@ -62,6 +63,19 @@ export default function Home() {
             <div className="text-xl font-medium text-black">ChitChat</div>
             <p className="text-slate-500">You have a new message!</p>
           </div>
+        </div>
+
+        <div className="mx-auto mt-10 flex max-w-sm items-center space-x-4 rounded-xl bg-white p-6 shadow-lg">
+          <Link href="/scroll-demo">
+            <button className="rounded-full border border-purple-200 px-4 py-1 text-sm font-semibold text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+              Scroll Indicator Demo
+            </button>
+          </Link>
+          <Link href="/parallax-demo">
+            <button className="rounded-full border border-purple-200 px-4 py-1 text-sm font-semibold text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+              Parallax Demo
+            </button>
+          </Link>
         </div>
 
         <div className="mx-auto mt-10 max-w-sm space-y-2 rounded-xl bg-white px-8 py-8 shadow-xl sm:flex sm:items-center sm:space-y-0 sm:space-x-6 sm:py-4">
@@ -162,8 +176,8 @@ export default function Home() {
         <div className="mx-auto max-w-2xl">
           <blockquote className="text-center text-2xl font-semibold italic text-slate-900">
             When you look
-            <span className="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-pink-500">
-              <span className="relative text-white">annoyed</span>
+            <span className="relative ml-3 mr-2 inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-pink-500">
+              <span className="relative  text-white">annoyed</span>
             </span>
             all the time, people think that you are busy.
           </blockquote>
@@ -238,6 +252,9 @@ export default function Home() {
         </div>
 
         <AnimatedDesc />
+        <div className="mx-auto max-w-3xl ">
+          <SnapComponent />
+        </div>
       </main>
     </>
   )

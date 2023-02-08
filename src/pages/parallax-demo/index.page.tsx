@@ -47,7 +47,7 @@ export default function ParallaxDemoPage() {
   return (
     <div>
       {[1, 2, 3, 4].map((d) => {
-        return <Image id={d} />
+        return <Image key={d} id={d} />
       })}
       <motion.div
         className="fixed left-0 right-0 bottom-24 h-1 snap-center bg-slate-500"

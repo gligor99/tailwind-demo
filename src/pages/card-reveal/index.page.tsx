@@ -60,7 +60,7 @@ const Card = ({ emoji, hueA, hueB }: CardProps) => {
 export default function CardRevealPage() {
   return cardItems.map(([emoji, hueA, hueB], i) => {
     return (
-      <section className="h-full w-full flex-1 bg-slate-100 pt-10">
+      <section key={i} className="h-full w-full flex-1 bg-slate-100 pt-10">
         <div className=" mx-auto max-w-lg">
           <Card key={i} emoji={emoji} hueA={hueA} hueB={hueB} />
         </div>

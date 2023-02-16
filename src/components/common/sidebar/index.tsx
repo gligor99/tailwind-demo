@@ -65,7 +65,7 @@ export const Sidebar = () => {
               key={i}
               className={`flex cursor-pointer items-center gap-x-4 rounded-md  text-sm text-gray-300 hover:bg-light-white 
           ${m.gap ? 'mt-9' : 'mt-2'} ${i === 0 && 'bg-light-white'} ${
-                !open && 'justify-center'
+                !open && 'justify-start'
               } `}
             >
               <div className="flex aspect-square h-10 items-center justify-center">

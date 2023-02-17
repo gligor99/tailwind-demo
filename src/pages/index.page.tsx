@@ -64,8 +64,7 @@ export default function Home() {
             <p className="text-slate-500">You have a new message!</p>
           </div>
         </div>
-
-        <div className="mx-auto mt-10 flex max-w-6xl flex-col items-center gap-5 space-x-4 rounded-xl bg-white p-6 shadow-lg lg:flex-row lg:gap-0">
+        <div className="mx-4 mt-10 flex max-w-full flex-col items-center justify-center gap-5 space-x-4 rounded-xl bg-white p-4 p-6 shadow-lg lg:flex-row lg:gap-0">
           <Link href="/scroll-demo">
             <button className="rounded-full border border-purple-200 px-4 py-1 text-sm font-semibold text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
               Scroll Indicator Demo

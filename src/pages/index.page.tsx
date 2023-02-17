@@ -101,6 +101,21 @@ export default function Home() {
               Cursor Demo
             </button>
           </Link>
+          <Link href="/tile-grid">
+            <button className="rounded-full border border-purple-200 px-4 py-1 text-sm font-semibold text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+              Tile Grid
+            </button>
+          </Link>
+          <Link href="/sidebar-page">
+            <button className="rounded-full border border-purple-200 px-4 py-1 text-sm font-semibold text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+              Sidebar
+            </button>
+          </Link>
+          <Link href="/ribbon-banner">
+            <button className="rounded-full border border-purple-200 px-4 py-1 text-sm font-semibold text-purple-600 hover:border-transparent hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+              Ribbon
+            </button>
+          </Link>
         </div>
 
         <div className="mx-auto mt-10 max-w-sm space-y-2 rounded-xl bg-white px-8 py-8 shadow-xl sm:flex sm:items-center sm:space-y-0 sm:space-x-6 sm:py-4">

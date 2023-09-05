@@ -15,7 +15,10 @@ export default function FbShare() {
           content="Testing the facebook share functionality"
           key="desc"
         />
-        <link rel="canonical" href="https://tailwind-demo-murex.vercel.app/" />
+        <link
+          rel="canonical"
+          href="https://tailwind-demo-murex.vercel.app/fb-share"
+        />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@rhapsody_media" />
         <meta
@@ -26,7 +29,7 @@ export default function FbShare() {
         <meta
           name="og:url"
           property="og:url"
-          content="https://tailwind-demo-murex.vercel.app/"
+          content="https://tailwind-demo-murex.vercel.app/fb-share"
         />
         <meta name="og:title" property="og:title" content="Demo projects" />
         <meta
